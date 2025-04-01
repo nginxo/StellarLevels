@@ -1,0 +1,26 @@
+name: StellarLevels
+version: '1.0'
+main: it.versy.stellarlevels.StellarLevels
+api-version: '1.21'
+description: Un plugin che gestisce i livelli dei giocatori.
+author: VersyLiones - Stellar Development
+depend:
+  - Vault
+softdepend:
+  - PlaceholderAPI
+commands:
+  livello:
+    description: Visualizza il tuo livello e l'esperienza attuale.
+    usage: /livello
+    aliases: [level, lvl, lv]
+  levelsystem:
+    description: Comandi di amministrazione per gestire i livelli e l'esperienza.
+    usage: /stellarlevels <level/exp> <set/add/take/reset> <amount> <player>
+    aliases: [ls]
+    permission: stellarlevels.admin
+    permission-message: "&cNon hai il permesso per usare questo comando."
+  reloadls:
+    description: Ricarica i config di LevelSystem.
+    aliases: [rls]
+    permission: stellarlevels.admin
+    permission-message: "&cNon hai il permesso per usare questo comando."

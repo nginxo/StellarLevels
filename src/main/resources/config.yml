@@ -1,0 +1,65 @@
+max-level: 85
+base-exp: 100.0
+
+boss-worlds:
+  arena1:
+    livello: 15
+    spawn-location:
+      x: 100.0
+      y: 65.0
+      z: 200.0
+  arena2:
+    livello: 15
+    spawn-location:
+      x: 50.0
+      y: 70.0
+      z: -150.0
+  arena3:
+    livello: 15
+    spawn-location:
+      x: -100.0
+      y: 64.0
+      z: 300.0
+  evento:
+    livello: 50
+    spawn-location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+  evento1:
+    livello: 50
+    spawn-location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+  evento2:
+    livello: 50
+    spawn-location:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+
+
+
+
+messages:
+  level-up: "&aComplimenti! Sei salito al livello %level%!"
+  max-level-reached: "&cHai raggiunto il livello massimo!"
+  current-level: "&eIl tuo livello attuale è: %level% (EXP: %current_exp%/%exp_required%)"
+  exp-gained: "&bHai guadagnato %exp% esperienza. (Totale: %current_exp%)"
+  player-not-found: "&cGiocatore non trovato!"
+  non-player-command: "&cSolo i giocatori possono usare questo comando!"
+  invalid-exp-amount: "&cQuantità di EXP non valida."
+  command-usage-exp: "&eUsa: /levelsystem <level/exp> <set/add/take/reset> <amount> <player>"
+
+database:
+  use: "h2" # "h2" per usare il database H2, "mysql" per usare MySQL/MariaDB
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "levelsystem"
+    username: "root"
+    password: "password"
+
+discord:
+  webhook-url: "https://discord.com/api/webhooks/1286819155785416754/pccdQTf1F7XA6djiYwJBceAwH5TkIG6bIlc9ezwmTJm3ubGb_JZkHYlLej6JMByNlhSd" # Inserisci qui il tuo webhook

@@ -1,0 +1,22 @@
+rewards:
+  money:
+    type: money
+    value: 100.0
+    level: 1
+  perm:
+    type: permission
+    value: "plugin.permission.use"
+    level: 5
+  item:
+    type: item
+    value: "DIAMOND"
+    amount: 5
+    level: 10
+  group:
+    type: group
+    value: "VIP"
+    level: 15
+  command:
+    type: command
+    value: "msg %player% hello"
+    level: 2
